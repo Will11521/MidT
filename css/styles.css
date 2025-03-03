@@ -71,6 +71,9 @@ nav a {
 nav a:hover {
     transform: scale(1.1);
 }
+nav a:focus {
+    outline: 2px solid #FF0000; /* Added red outline for tab focus, same as buttons */
+}
 
 /* Button Styling */
 .btn {
@@ -98,7 +101,7 @@ background-color: var(--primary-color);
 
 .btn:focus {
   
-    outline: 2px solid #fff;
+    outline: 2px solid #FF0000;
 }
 
 /* Visited state for Learn More buttons - changes to purple after visiting */
@@ -112,14 +115,18 @@ background-color: var(--primary-color);
 .hero {
     position: relative;
     margin: 2rem 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     
 }
 
 .hero img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
     animation: zoom 20s infinite;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+
     
 }
 
@@ -234,7 +241,7 @@ footer p {
 }
 
 .skip-link:focus {
-    outline: 2px solid var(--primary-color);
+    outline: 2px solid #FF0000; /* Changed to red to match other focus styles */
 }
 
 /* Responsive Design */
