@@ -112,13 +112,14 @@ background-color: var(--primary-color);
 .hero {
     position: relative;
     margin: 2rem 0;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    
 }
 
 .hero img {
     width: 100%;
     border-radius: 10px;
     animation: zoom 20s infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     
 }
 
